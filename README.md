@@ -1,4 +1,4 @@
-# TestSocieteGenerale
+# Test Angular - Societe Generale
 
 ## Development server
 
