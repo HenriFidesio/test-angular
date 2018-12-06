@@ -14,6 +14,7 @@
 
 ## Resources
 Angular material https://material.angular.io/
+
 JSON placeholder https://jsonplaceholder.typicode.com/
 
 ## FAQ
