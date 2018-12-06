@@ -1,0 +1,33 @@
+@import '../styles/spacing.scss';
+@import '../styles/breakpoint.scss';
+
+
+.app {
+	&__container {
+		padding: $gutter 10rem;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+    .app {
+		&__container {
+	        padding: $gutter 2rem;
+	    }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+	.app {
+		&__container {
+        	padding: $gutter 5rem;
+		}
+	}
+}
+
+@media (min-width: $screen-xl-min) {
+    .app {
+    	&__container {
+        	padding: $gutter 15rem;
+    	}
+    }
+}

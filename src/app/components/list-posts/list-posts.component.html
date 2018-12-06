@@ -1,1 +1,8 @@
-list posts
+<mat-card class="list-posts">
+	<ul class="list-posts__list">
+		<a class="list-posts__item" *ngFor="let post of posts">
+			<span class="list-posts__item__title"> {{post.title}} </span> 
+			<span class="list-posts__item__author"> User {{post.userId}} </span>
+		</a>
+	</ul>
+</mat-card>

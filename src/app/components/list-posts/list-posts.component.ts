@@ -13,8 +13,20 @@ import { PostService } from '@services';
 })
 export class ListPostsComp {
  	
- 	constructor(postService: PostService) {
+ 	constructor(private postService: PostService) { }
 
+ 	// view variables
+ 	public posts;
+
+ 	// life cycle
+ 	ngOnInit() {
+		this.loadPosts();
+ 	}
+
+ 	// methods
+ 	async loadPosts() {
+ 		const resp = await this.postService.getList().toPromise();
+ 		this.posts = resp;
  	}
 
 }

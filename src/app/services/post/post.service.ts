@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 /**
  * @desc
  */
@@ -9,5 +10,11 @@ import { HttpClient } from '@angular/common/http';
 export class PostService {
 
     constructor(private http: HttpClient) { }
+
+    apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+
+    getList() {
+    	return this.http.get(this.apiUrl);
+    }
 
 }

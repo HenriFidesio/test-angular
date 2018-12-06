@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // pages
-import { ListPage } from './pages';
+import { ListPage } from '@pages';
 
 
 const routes: Routes = [
