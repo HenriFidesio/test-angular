@@ -4,6 +4,22 @@
 $cl-primary: #039BE5;
 
 .list-posts {
+	.mat-table {
+		width: 100%;
+		tr.mat-row {
+			cursor: pointer;
+			transition: .3s background-color;
+			&:hover {
+				background-color: rgba($cl-primary, .3);
+				.list-posts__item {
+					color: white;
+				}
+			}
+		}
+	}
+	&__filter {
+		margin-left: $gutter;
+	}
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -15,25 +31,6 @@ $cl-primary: #039BE5;
 		flex-direction: column;
 		padding: $gutter;
 		width: 45%;
-		border-bottom: 1px solid rgba(grey, .4);
-		cursor: pointer;
-		transition: .3s background-color;
-		&__title {
-			margin-bottom: $gutter/2;
-			font-size: 1.1rem;
-			color: $cl-primary;
-			transition: .3s color;
-		}
-		&__author {
-			font-size: .8rem;
-			font-style: italic;
-			color: rgba(grey, .5);
-		}
-		&:hover {
-			background-color: rgba($cl-primary, .3);
-			.list-posts__item__title {
-				color: white;
-			}
-		}
+		transition: .3s color;
 	}
 }

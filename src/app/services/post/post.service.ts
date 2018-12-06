@@ -17,4 +17,8 @@ export class PostService {
     	return this.http.get(this.apiUrl);
     }
 
+    getOne({id = 0}) {
+    	return this.http.get(`${this.apiUrl}/${id}`);
+    }
+
 }

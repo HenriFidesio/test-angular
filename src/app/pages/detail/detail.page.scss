@@ -1,0 +1,28 @@
+@import '../../../styles/spacing.scss';
+@import '../../../styles/breakpoint.scss';
+
+.detail-page {
+	&__back-btn {
+		margin-bottom: $gutter*2;
+		cursor: pointer;
+		&__icon {
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 1rem;
+			width: 1rem;
+			margin: 0 auto;
+			border: 2px solid white;
+			border-bottom: none;
+			border-left: none;
+			transform: rotateZ(-135deg);
+		}
+	}
+	&__title {
+		text-align: center;
+		color: #1976D2;
+	}
+	&__content {
+
+	}
+}

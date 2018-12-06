@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // pages
-import { ListPage } from '@pages';
+import { ListPage, DetailPage } from '@pages';
 
 
 const routes: Routes = [
@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'list',
         component: ListPage,
     },
+    {
+        path: 'detail/:postId',
+        component: DetailPage,
+    }
     // {
     //     path: '**',
     //     component: NotFoundPage,

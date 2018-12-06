@@ -1,0 +1,15 @@
+<a class="detail-page__back-btn"
+	mat-fab color="warn"
+ 	[routerLink]="['/list']"
+>
+	<span class="detail-page__back-btn__icon"> </span>
+</a>
+
+<mat-card *ngIf="post" class="detail-page__container">
+	<h1 class="detail-page__title">
+		{{post.title}}
+	</h1>
+	<p class="detail-page__content">
+		{{post.body}}
+	</p>
+</mat-card>

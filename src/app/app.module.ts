@@ -4,15 +4,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 // material
-import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 // app
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // components
 import { ListPostsComp } from '@components';
 // pages
-import { ListPage } from '@pages';
+import { ListPage, DetailPage } from '@pages';
 
 @NgModule({
     declarations: [
@@ -22,6 +27,7 @@ import { ListPage } from '@pages';
         ListPostsComp,
         // pages
         ListPage,
+        DetailPage,
     ],
     imports: [
         // core
@@ -29,8 +35,13 @@ import { ListPage } from '@pages';
         BrowserAnimationsModule,
         HttpClientModule,
         // material
-        MatListModule,
         MatCardModule,
+        MatButtonModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatFormFieldModule,
+        MatInputModule,
         // app
         AppRoutingModule,
     ],
