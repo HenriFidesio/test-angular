@@ -2,7 +2,7 @@
 
 ## Development server
 
-`git clone https://github.com/HenriFidesio/test-societe-generale.git`
+`git clone https://github.com/HenriFidesio/test-angular.git`
 
 `cd test-societe-generale`
 
